@@ -1,0 +1,83 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A2A2A;
+    width: 100%;
+    height: 250px;
+}
+.information {
+    display: flex;
+    flex-direction: row;
+    gap: 400px
+}
+
+
+
+.footer-logo {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.information__legal {
+    color: #797979;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+    padding-top: 16px;
+}
+
+.information__legal::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.information__connection-title {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.information__connection {
+    margin-top: 50px;
+    position: relative;
+    padding-left: 32px;
+}
+
+
+.information__connection::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    width: 2px;
+    height: 100px;
+    background-color: #4D5CFF;
+}
+
+
+.information__connection-telegram {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    text-align: center;
+    gap: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: #ffffff
+}
+
+.information__connection-telegram:hover {
+    color: #797979;
+    transition: all 0.6s;
+}

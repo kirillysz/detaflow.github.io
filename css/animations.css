@@ -1,0 +1,10 @@
+.fade-up-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fade-up-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

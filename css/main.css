@@ -1,0 +1,251 @@
+main {
+    width: 100%;
+    display: flex;
+    gap: 150px;
+    flex-direction: column;
+    margin-bottom: 150px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.section__divider {
+    width: 100%;
+    height: 2px;
+    background-color: #3D3D3D;
+    margin-top: 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.features__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+
+.features__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-left: 20px;
+    font-size: 3.333vw;
+    color: #fff
+}
+
+.title-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.title-underline-advantages {
+    position: relative;
+    display: inline-block;
+}
+
+.title-underline-advantages::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 470px;
+  height: 2px;
+  background: #4D5CFF;
+  border-radius: 2px;
+}
+
+
+.title-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 11.458vw;
+  height: 2px;
+  background: #4D5CFF;
+  border-radius: 2px;
+}
+
+
+.features {
+  display: flex;
+  gap: 20px;
+}
+
+.features__item {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+
+
+
+.features__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%; 
+  right: -10px; 
+  width: 1px;
+  height: 130px;
+  background-color: #2A2A2A;
+  transform: translateY(-50%); 
+}
+
+.features__item-text {
+  margin: 0 0 30px 0;
+  position: relative;
+  color: #2A2A2A;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.302vw;
+  line-height: 1.3;
+}
+
+.features__item-text::after {
+  content: '';
+  position: absolute;
+  left: 50%; 
+  bottom: -15px;
+  width: 130px;
+  height: 1px;
+  background-color: #2A2A2A;
+  transform: translateX(-50%);
+}
+
+.features__item {
+    text-decoration: none;
+    text-align: center;
+}
+
+.features__item .features__item-title {
+    font-size: 1.667vw;
+    color: #F2F2F2
+}
+
+.features__item .features__item-text {
+    font-size: 1.25vw;
+    color: #B3B3B3
+}
+
+.advantages {
+    position: relative;
+    width: 1200px; 
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px 0;
+    background: #1b1b1b;
+    color: #fff;
+    text-align: center;
+}
+
+.advantages__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.slider__wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider__viewport {
+    display: flex;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    width: 100%
+}
+
+.slider__item {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.slider__title {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.slider__text {
+    font-size: 25px;
+    text-align: center;
+    color: #aaa;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.slider__icon {
+    width: 50px;
+    height: auto;
+}
+
+/* Стрелки */
+.slider__controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.slider__control {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.slider__control:hover {
+    opacity: 0.7;
+    transform: scale(1.3);
+    transition: all 0.7s;
+}
+
+/* Точки */
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slider__dot {
+    width: 480px;
+    height: 2px;
+    background: #555;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.slider__dot--active {
+    background: #fff;
+}
+
+
+.projects__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-left: 20px;
+    font-size: 3.333vw;
+    color: #fff
+}
+
+.projects__text {
+    font-size: 40px;
+    text-align: center;
+    color: #797979
+}
